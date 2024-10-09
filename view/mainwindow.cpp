@@ -1,7 +1,8 @@
-#include "MainWindow.h"
+#include "view/MainWindow.h"
 #include <QVBoxLayout>
 #include <QTableView>
 #include <QPushButton>
+#include <QJsonObject>
 #include <QMessageBox>
 #include <QHeaderView>
 

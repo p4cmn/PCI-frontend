@@ -1,12 +1,14 @@
 #ifndef PCITABLEMODEL_H
 #define PCITABLEMODEL_H
 
-#include <QJsonArray>
-#include <QJsonObject>
 #include <QAbstractTableModel>
+#include <QJsonArray>
 
 class PciTableModel : public QAbstractTableModel {
   Q_OBJECT
+
+private:
+  QJsonArray pciData;
 
 public:
   explicit PciTableModel(QObject *parent = nullptr);
@@ -18,7 +20,7 @@ public:
   QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
 
 private:
-  QJsonArray pciData;
+  void sortPciData();
 };
 
 #endif // PCITABLEMODEL_H

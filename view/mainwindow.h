@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "client\TcpClient.h"
-#include "model\PciTableModel.h"
+#include "client/TcpClient.h"
+#include "model/PciTableModel.h"
 
 class QTableView;
 class QPushButton;
