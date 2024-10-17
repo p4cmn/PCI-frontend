@@ -26,10 +26,10 @@ private slots:
   void onRequestData();
   void onDataReceived(const QJsonDocument &jsonData);
   void onConnectionError(const QString &errorMessage);
+  void onCellClicked(const QModelIndex &index);
 
 private:
   void setupUI();
-
 };
 
 #endif // MAINWINDOW_H
